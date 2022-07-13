@@ -1,184 +1,244 @@
 {
-    "REST": {
-        "Accept": {
-            "title": "Accept",
-            "description": "Specify the types of resources that will be accepted by the client."
-        },
-        "accountParams": {
-            "title": "Accounts",
-            "description": "Configure how your application accounts will be imported"
-        },
-        "accountThresholdValue": {
-            "title": "Account Threshold",
-            "description": "Set the maximum number of accounts that can be suspended or deleted (if the value is exceeded, no action is taken)."
-        },
-        "acctEntMappings": {
-            "title": "Entitlement Mappings",
-            "description": "Map entitlements from your application to Saviynt if there aren't separate API calls."
-        },
-        "acctEntParams": {
-            "title": "Account Entitlements",
-            "description": "Configure how your account entitlements will be imported"
-        },
-        "acctIdPath": {
-            "title": "Account ID Path",
-            "description": "Define the path of the account ID in the response JSON."
-        },
-        "acctKeyField": {
-            "title": "Account Key Field",
-            "description": "Define the key field that uniquely identifies your account."
-        },
-        "activeStatus": {
-            "title": "Active Status",
-            "description": "Specify the values that will identify active accounts in the target application."
-        },
-        "Authorization": {
-            "title": "Authorization",
-            "description": "Specify the authorization mechanism that will be used when making API calls to your application."
-        },
-        "call": {
-            "title": "Data Calls",
-            "description": "Enter the values that will allow data to be retrieved from your application via API calls."
-        },
-        "call1": {
-            "title": "Call 1",
-            "description": ""
-        },
-        "call2": {
-            "title": "Call 2",
-            "description": ""
-        },
-        "call3": {
-            "title": "Call 3",
-            "description": ""
-        },
-        "call4": {
-            "title": "Call 4",
-            "description": ""
-        },
-        "call5": {
-            "title": "Call 5",
-            "description": ""
-        },
-        "callOrder": {
-            "title": "Call Order",
-            "description": "Specify the order of API calls, starting with zero (the lowest value is called first)."
-        },
-        "colsToPropsMap": {
-            "title": "Attribute Mapping",
-            "description": "Map the properties between the target application and Saviynt"
-        },
-        "connection": {
-            "title": "Connection Name",
-            "description": "Specify the name of the connection"
-        },
-        "correlateInactiveAccounts": {
-            "title": "Inactive Accounts",
-            "description": "Indicate whether or not you want to correlate inactive accounts to users (enter true or false)."
-        },
-        "deleteAccEntForActiveAccounts": {
-            "title": "Delete Active Account Entitlements",
-            "description": "Indicate whether or not you want account entitlements deleted for active accounts (enter true or false)."
-        },
-        "deleteLinks": {
-            "title": "Delete Links",
-            "description": "Indicate whether or not you want accounts that have been deleted in your application to also be deleted in Saviynt (enter true or false)."
-        },
-        "disableDeletedEntitlements": {
-            "title": "Disable Deleted Entitlements",
-            "description": "No longer required in the current codebase (set to false)."
-        },
-        "entitlementParams": {
-            "title": "Entitlements",
-            "description": "Configure how your entitlements will be imported"
-        },
-        "entKeyField": {
-            "title": "Entitlement Key Field",
-            "description": "Define the key field that uniquely identifies your entitlements."
-        },
-        "entTypeOrder": {
-            "title": "Entitlement Type Order",
-            "description": "Specify the order of entitlement types, starting with zero."
-        },
-        "entTypes": {
-            "title": "Entitlement Types",
-            "description": "Specify all the types of entitlements to be imported."
-        },
-        "Group": {
-            "title": "Group",
-            "description": "Configure the API call for the group entitlement type."
-        },
-        "http": {
-            "title": "API Calls",
-            "description": "Specify the details required to make API calls."
-        },
-        "httpHeaders": {
-            "title": "HTTP Headers",
-            "description": "Specify the header parameters that will be sent with API calls."
-        },
-        "httpContentType": {
-            "title": "HTTP Content Type",
-            "description": "Specify the content type parameters for API calls (JSON, text, html, XML or application XML)."
-        },
-        "httpMethod": {
-            "title": "HTTP Method",
-            "description": "Specify the method that will be used to call the API (GET, POST, PUT, DELETE and GETWITHBODY)."
-        },
-        "idPath": {
-            "title": "ID Path",
-            "description": "Specify the JSON key in API responses that will hold unique values and get mapped to the Key Field."
-        },
-        "inactivateAccountsNotInFile": {
-            "title": "Inactivate Accounts",
-            "description": "Indicate whether or not you want accounts that have been deleted in your application to be marked as inactive (enter true or false)."
-        },
-        "keyField": {
-            "title": "Key Field",
-            "description": "Specify the account ID that Saviynt will use to identify if the incoming request is for a new or current account."
-        },
-        "listField": {
-            "title": "List Field",
-            "description": "Specify the path to the list of accounts that will be used in API responses."
-        },
-        "listPath": {
-            "title": "List Path",
-            "description": "Specify the JSON key to the list of entitlements in API responses (ignore if entitlements are not available as an array)."
-        },
-        "nextUrl": {
-            "title": "Next URL",
-            "description": "Configure the pagination type that will be used to obtain paged results."
-        },
-        "nextUrlPath": {
-            "title": "Next URL Path",
-            "description": "Specify the condition that will be used to check for the next page of accounts (if no path is found with the URL, it stops)."
-        },
-        "pagination": {
-            "title": "Pagination",
-            "description": "Indicate whether or not paged results will be allowed in call responses."
-        },
-        "processingType": {
-            "title": "Processing Type",
-            "description": "Specify that the data to be imported will be sequential and iterative."
-        },
-        "Role": {
-            "title": "Role",
-            "description": "Configure the API call for the role entitlement type."
-        },
-        "stageNumber": {
-            "title": "Stage Number",
-            "description": "Specify the stage number for API calls (enter zero for the first API call)."
-        },
-        "statusAndThresholdConfig": {
-            "title": "Status & Threshold",
-            "description": "Specify the parameters that will be used to make required changes and set limits during data imports."
-        },
-        "statusColumn": {
-            "title": "Status Column",
-            "description": "Specify the name of the column where the status of the imported account is stored."
-        },
-        "url": {
-            "title": "URL",
-            "description": "Specify the URL that will be used for API calls."
-        }
+  "REST": {
+    "Accept": {
+      "title": "Accept",
+      "description": "Specify the types of resources that will be accepted by the client."
+    },
+    "accountParams": {
+      "title": "Accounts",
+      "description": "Configure how your application accounts will be imported"
+    },
+    "accountThresholdValue": {
+      "title": "Account Threshold",
+      "description": "Set the maximum number of accounts that can be suspended or deleted (if the value is exceeded, no action is taken)."
+    },
+    "acctEntMappings": {
+      "title": "Entitlement Mappings",
+      "description": "Map entitlements from your application to Saviynt if there aren't separate API calls."
+    },
+    "acctEntParams": {
+      "title": "Account Entitlements",
+      "description": "Configure how your account entitlements will be imported"
+    },
+    "acctIdPath": {
+      "title": "Account ID Path",
+      "description": "Define the path of the account ID in the response JSON."
+    },
+    "acctKeyField": {
+      "title": "Account Key Field",
+      "description": "Define the key field that uniquely identifies your account."
+    },
+    "activeStatus": {
+      "title": "Active Status",
+      "description": "Specify the values that will identify active accounts in the target application."
+    },
+    "Authorization": {
+      "title": "Authorization",
+      "description": "Specify the authorization value that will be used when making API calls to your application."
+    },
+    "call": {
+      "title": "Data Calls",
+      "description": "Enter the values that will allow data to be retrieved from your application via API calls."
+    },
+    "call1": {
+      "title": "Call 1",
+      "description": ""
+    },
+    "call2": {
+      "title": "Call 2",
+      "description": ""
+    },
+    "call3": {
+      "title": "Call 3",
+      "description": ""
+    },
+    "call4": {
+      "title": "Call 4",
+      "description": ""
+    },
+    "call5": {
+      "title": "Call 5",
+      "description": ""
+    },
+    "callOrder": {
+      "title": "Call Order",
+      "description": "Specify the order of API calls, starting with zero (the lowest value is called first)."
+    },
+    "colsToPropsMap": {
+      "title": "Attribute Mapping",
+      "description": "Map the properties between the target application and Saviynt"
+    },
+    "connection": {
+      "title": "Connection Name",
+      "description": "Specify the name of the connection"
+    },
+    "correlateInactiveAccounts": {
+      "title": "Inactive Accounts",
+      "description": "Indicate whether or not you want to correlate inactive accounts to users (enter true or false)."
+    },
+    "deleteAccEntForActiveAccounts": {
+      "title": "Delete Active Account Entitlements",
+      "description": "Indicate whether or not you want account entitlements deleted for active accounts (enter true or false)."
+    },
+    "deleteLinks": {
+      "title": "Delete Links",
+      "description": "Indicate whether or not you want accounts that have been deleted in your application to also be deleted in Saviynt (enter true or false)."
+    },
+    "disableDeletedEntitlements": {
+      "title": "Disable Deleted Entitlements",
+      "description": "No longer required in the current codebase (set to false)."
+    },
+    "entitlementParams": {
+      "title": "Entitlements",
+      "description": "Configure how your entitlements will be imported"
+    },
+    "entKeyField": {
+      "title": "Entitlement Key Field",
+      "description": "Define the key field that uniquely identifies your entitlements."
+    },
+    "entTypeOrder": {
+      "title": "Entitlement Type Order",
+      "description": "Specify the order of entitlement types, starting with zero."
+    },
+    "entTypes": {
+      "title": "Entitlement Types",
+      "description": "Specify all the types of entitlements to be imported."
+    },
+    "Group": {
+      "title": "Group",
+      "description": "Configure the API call for the group entitlement type."
+    },
+    "http": {
+      "title": "API Calls",
+      "description": "Specify the details required to make API calls."
+    },
+    "httpHeaders": {
+      "title": "HTTP Headers",
+      "description": "Specify the header parameters that will be sent with API calls."
+    },
+    "httpContentType": {
+      "title": "HTTP Content Type",
+      "description": "Specify the content type parameters for API calls (JSON, text, html, XML or application XML)."
+    },
+    "httpMethod": {
+      "title": "HTTP Method",
+      "description": "Specify the method that will be used to call the API (GET, POST, PUT, DELETE and GETWITHBODY)."
+    },
+    "idPath": {
+      "title": "ID Path",
+      "description": "Specify the JSON key in API responses that will hold unique values and get mapped to the Key Field."
+    },
+    "inactivateAccountsNotInFile": {
+      "title": "Inactivate Accounts",
+      "description": "Indicate whether or not you want accounts that have been deleted in your application to be marked as inactive (enter true or false)."
+    },
+    "keyField": {
+      "title": "Key Field",
+      "description": "Specify the account ID that Saviynt will use to identify if the incoming request is for a new or current account."
+    },
+    "listField": {
+      "title": "List Field",
+      "description": "Specify the path to the list of accounts that will be used in API responses."
+    },
+    "listPath": {
+      "title": "List Path",
+      "description": "Specify the JSON key to the list of entitlements in API responses (ignore if entitlements are not available as an array)."
+    },
+    "nextUrl": {
+      "title": "Next URL",
+      "description": "Configure the pagination type that will be used to obtain paged results."
+    },
+    "nextUrlPath": {
+      "title": "Next URL Path",
+      "description": "Specify the condition that will be used to check for the next page of accounts (if no path is found with the URL, it stops)."
+    },
+    "pagination": {
+      "title": "Pagination",
+      "description": "Indicate whether or not paged results will be allowed in call responses."
+    },
+    "processingType": {
+      "title": "Processing Type",
+      "description": "Specify that the data to be imported will be sequential and iterative."
+    },
+    "Role": {
+      "title": "Role",
+      "description": "Configure the API call for the role entitlement type."
+    },
+    "stageNumber": {
+      "title": "Stage Number",
+      "description": "Specify the stage number for API calls (enter zero for the first API call)."
+    },
+    "statusAndThresholdConfig": {
+      "title": "Status & Threshold",
+      "description": "Specify the parameters that will be used to make required changes and set limits during data imports."
+    },
+    "statusColumn": {
+      "title": "Status Column",
+      "description": "Specify the name of the column where the status of the imported account is stored."
+    },
+    "url": {
+      "title": "URL",
+      "description": "Specify the URL that will be used for API calls."
+    },
+    "accessToken": {
+      "title": "Access Token",
+      "description": "Specify the access token if its already available, else specify a generic value like Basic abcd."
+    },
+    "accountIdPath": {
+      "title": "Created Account ID Path",
+      "description": "Define the path of the account ID in the response JSON."
+    },
+    "acctAuth": {
+      "title": "acctAuth",
+      "description": "The name of the connection which is used in defining API calls"
+    },
+    "authentications": {
+      "title": "Authentications",
+      "description": "Configure how your authentication is built"
+    },
+    "authError": {
+      "title": "Authorization Error",
+      "description": "Specify a list of errors that may be encountered due to authentication failure or token errors."
+    },
+    "authType": {
+      "title": "Authentication Type",
+      "description": "Specify the Authentication Type from the drop-down."
+    },
+    "errorPath": {
+      "title": "Error Path",
+      "description": "Specify the path where the error message is stored."
+    },
+    "httpParams": {
+      "title": "HTTP Parameters",
+      "description": "Specify the Body elements that will be used to call the API."
+    },
+    "maxRefreshTryCount": {
+      "title": "Token",
+      "description": "Specify the the maximum number of times to refresh and get the token."
+    },
+    "name": {
+      "title": "Name",
+      "description": "Specify a name for the call to uniquely identify it."
+    },
+    "properties": {
+      "title": "Properties",
+      "description": "Specify the credentials for authenticating the application."
+    },
+    "responseColsToPropsMap": {
+      "title": "Attribute Mapping",
+      "description": "Map the properties between the target application and Saviynt"
+    },
+    "retryFailureStatusCode": {
+      "title": "Retry Failure Status Code",
+      "description": "Specify the HTTP Codes to identify a API Failures to retry the Authentication."
+    },
+    "successResponses": {
+      "title": "Success Responses",
+      "description": "Specify the HTTP Codes to identify a successful API Call."
+    },
+    "tokenType": {
+      "title": "Token Type",
+      "description": "Specify the Token Type that will be used when making API calls to your application."
     }
+  }
 }
